@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vue Component</title>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    </head>
+    <body>
+        <div id="container">
+            <vue-chartist :data="data" :options="options" :type="type" :listener="listener" style="height: 300px;"></vue-chartist>
+            <button @click="updateData()">Update Data</button>
+            <button @click="updateOptions()">Update Options</button>
+        </div>
+        <script type="text/javascript" src="/build/build.js"></script>
+    </body>
+</html>
