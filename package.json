@@ -1,6 +1,6 @@
 {
   "name": "v-chartist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A component of Chartist implements by vuejs 2.0",
   "main": "./dist/vue-chartist.min.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+ssh://git@gitlab.com/lakb248/vue-chartist.git"
   },
-  "author": "lakb248",
-  "license": "MIT",
+  "author": "lakb248@gmail.com",
+  "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/lakb248/vue-chartist/issues"
   },
@@ -21,8 +21,6 @@
     "vuejs",
     "chartist"
   ],
-  "author": "lakb248@gmail.com",
-  "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",
