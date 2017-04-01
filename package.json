@@ -41,6 +41,6 @@
   },
   "peerDependencies": {
     "chartist": "^0.10.1",
-    "vue": "^2.2.6"
+    "vue": "^2.0.0"
   }
 }
