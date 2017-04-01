@@ -7,6 +7,15 @@
     "dev": "webpack-dev-server --inline --watch --progress --config webpack.dev.config.js --port 8888",
     "build": "rimraf dist/ && webpack --progress --config webpack.prod.config.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/lakb248/vue-chartist.git"
+  },
+  "author": "lakb248",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/lakb248/vue-chartist/issues"
+  },
   "keywords": [
     "vue-component",
     "vuejs",
