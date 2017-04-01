@@ -1,17 +1,15 @@
 {
   "name": "vue-chartist",
-  "version": "0.0.2",
-  "description": "a vue-chartist implements by vuejs",
-  "main": "./dist/vue-chartist.min.js",
+  "version": "0.0.1",
+  "description": "A component of chartist implements by vuejs 2.0",
+  "main": "./src/index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --watch --progress --config webpack.dev.config.js --port 8888",
-    "build": "rimraf dist/ && webpack --progress --config webpack.prod.config.js",
-    "test": "karma start karma.config.js",
-    "ci": "npm run test && npm run build"
+    "dev": "webpack-dev-server --inline --watch --progress --config webpack.dev.config.js --port 8888"
   },
   "keywords": [
     "vue-component",
-    "vuejs"
+    "vuejs",
+    "chartist"
   ],
   "author": "lakb248@gmail.com",
   "license": "ISC",
@@ -27,21 +25,7 @@
     "eslint-config-vue": "^1.0.3",
     "eslint-plugin-html": "^1.5.1",
     "file-loader": "^0.9.0",
-    "isparta": "^4.0.0",
-    "isparta-loader": "^2.0.0",
-    "istanbul": "^0.4.4",
-    "jasmine-core": "^2.4.1",
-    "karma": "^1.2.0",
-    "karma-babel-preprocessor": "^6.0.1",
-    "karma-coverage": "^1.1.1",
-    "karma-html-reporter": "^0.2.7",
-    "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.1",
-    "karma-spec-reporter": "0.0.26",
-    "karma-verbose-reporter": "0.0.3",
-    "karma-webpack": "^1.8.0",
     "node-sass": "^3.4.2",
-    "phantomjs": "^2.1.7",
     "rimraf": "^2.6.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.0",
