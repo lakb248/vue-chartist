@@ -43,6 +43,7 @@ new Vue({
 | options | the options of chart |
 | type | the type of chart, default `Line` |
 | listener| the listener of chart |
+
 See the document of [Chartist](https://gionkunz.github.io/chartist-js/api-documentation.html) for detail.
 
 ## Contribution
