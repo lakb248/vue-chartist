@@ -1,10 +1,11 @@
 {
-  "name": "vue-chartist",
+  "name": "v-chartist",
   "version": "0.0.1",
-  "description": "A component of chartist implements by vuejs 2.0",
-  "main": "./src/index.js",
+  "description": "A component of Chartist implements by vuejs 2.0",
+  "main": "./dist/vue-chartist.min.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --watch --progress --config webpack.dev.config.js --port 8888"
+    "dev": "webpack-dev-server --inline --watch --progress --config webpack.dev.config.js --port 8888",
+    "build": "rimraf dist/ && webpack --progress --config webpack.prod.config.js"
   },
   "keywords": [
     "vue-component",
