@@ -39,35 +39,46 @@
             };
         },
         methods: {
+            updateEventListener(listener, type = 'on') {
+                listener = listener || {};
+                for (let event in listener) {
+                    if (listener.hasOwnProperty(event)) {
+                        this.chartist[type](event, listener[event]);
+                    }
+                }
+            },
             renderChart() {
-                let data = JSON.parse(JSON.stringify(this.data));
-                let options = this.options ? JSON.parse(JSON.stringify(this.options)) : {};
-                let responsiveOptions = this.responsiveOptions ? JSON.parse(JSON.stringify(this.responsiveOptions)) : [];
+                let data = this.data;
+                let options = this.options ? this.options : {};
+                let responsiveOptions = this.responsiveOptions ? this.responsiveOptions : [];
                 if (this.chartist) {
                     this.chartist.update(data, options, responsiveOptions);
                 } else {
                     this.chartist = new Chartist[this.type](this.$el, data, options, responsiveOptions);
-                    if (this.listener) {
-                        Object.keys(this.listener).forEach(key => {
-                            this.chartist.on(key, this.listener[key]);
-                        });
-                    }
+                    this.updateEventListener(this.listener, 'on');
                 }
             }
         },
+        watch: {
+            data: {
+                handler: 'renderChart',
+                deep: true
+            },
+            options: {
+                handler: 'renderChart',
+                deep: true
+            },
+            responsiveOptions: {
+                handler: 'renderChart',
+                deep: true
+            },
+            listener(val, oldVal) {
+                this.updateEventListener(oldVal, 'off');
+                this.updateEventListener(val, 'on');
+            }
+        },
         mounted() {
-            this.$nextTick(() => {
-                this.renderChart();
-            });
-            this.$watch('data', () => {
-                this.renderChart();
-            }, {deep: true});
-            this.$watch('options', () => {
-                this.renderChart();
-            }, {deep: true});
-            this.$watch('responsiveOptions', () => {
-                this.renderChart();
-            }, {deep: true});
+            this.renderChart();
         },
         destroyed() {
             if (this.chartist) {
@@ -76,5 +87,3 @@
         }
     };
 </script>
-
-<style lang="sass"></style>
