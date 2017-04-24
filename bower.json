@@ -1,0 +1,22 @@
+{
+  "name": "vue-chartist",
+  "description": "A component of Chartist implements by vuejs 2.0",
+  "main": "./dist/vue-chartist.min.js",
+  "authors": [
+    "lakb248@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vue-component",
+    "vuejs",
+    "chartist"
+  ],
+  "homepage": "https://github.com/lakb248/vue-chartist",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
