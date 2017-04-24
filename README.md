@@ -5,6 +5,10 @@
 ```
 npm install v-chartist --save
 ```
+or
+```
+bower install vue-chartist --save
+```
 
 ## Usage
 ``` javascript
