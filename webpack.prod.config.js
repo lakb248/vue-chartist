@@ -13,6 +13,7 @@ config.output = {
 config.externals = {
     chartist: {
         commonjs: "chartist",
+        commonjs2: "chartist",
         amd: "chartist",
         root: "Chartist"
     }
