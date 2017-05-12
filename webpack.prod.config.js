@@ -11,7 +11,11 @@ config.output = {
     libraryTarget: 'umd'
 };
 config.externals = {
-    chartist: 'Chartist'
+    chartist: {
+        commonjs: "chartist",
+        amd: "chartist",
+        root: "Chartist"
+    }
 };
 
 config.plugins = (config.plugins || []).concat([
