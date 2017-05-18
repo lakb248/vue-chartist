@@ -14,7 +14,7 @@ config.externals = {
     chartist: {
         commonjs: "chartist",
         commonjs2: "chartist",
-        amd: "chartist",
+        amd: "Chartist",
         root: "Chartist"
     }
 };
