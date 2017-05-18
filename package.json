@@ -1,6 +1,6 @@
 {
   "name": "v-chartist",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A component of Chartist implements by vuejs 2.0",
   "main": "./dist/vue-chartist.min.js",
   "scripts": {
