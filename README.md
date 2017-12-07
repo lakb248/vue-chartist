@@ -12,7 +12,7 @@ bower install vue-chartist --save
 
 ## Usage
 ``` javascript
-import VueChartist from 'v-chartist';
+import VueChartist from 'vue-chartist';
 
 new Vue({
     components: {
